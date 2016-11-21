@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Valor de resistencia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/angular.js'></script>
+    <script src='js/contextMenu.js'></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="container-fluid" ng-app="resistencias">
+    <div ng-controller="controlador">
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-success">
+                    <strong>Tip: </strong>Haz clic en una banda y selecciona el color que desees
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="resistencia  text-center">
+                    <div ng-repeat="banda in bandas" context-menu-on="click" context-menu="opcionesColores"
+                         class="cursor-de-manita banda {{banda.color}}"><h3>{{banda.etiqueta}}</h3></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="unidades">Unidad de medida:</label>
+                    <select id="unidades" class="form-control"
+                            ng-options="unidad as unidad.etiqueta for unidad in unidades track by unidad.id"
+                            ng-model="unidadSeleccionada"></select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-condensed">
+                        <tbody>
+                        <tr>
+                            <td><strong>Resistencia</strong></td>
+                            <td>{{resistencia | number:10}} {{unidadSeleccionada.etiqueta}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tolerancia</strong></td>
+                            <td>{{tolerancia | number:10}} {{unidadSeleccionada.etiqueta}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Valor mínimo</strong></td>
+                            <td>{{valorMinimoResistencia | number:10}} {{unidadSeleccionada.etiqueta}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Valor máximo</strong></td>
+                            <td>{{valorMaximoResistencia | number:10}} {{unidadSeleccionada.etiqueta}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="valor">Valor de la resistencia:</label>
+                    <input disabled="disabled" placeholder="Muy pronto..." class="form-control" type="number"
+                           id="valor"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
