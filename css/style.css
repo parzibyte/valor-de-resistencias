@@ -1,0 +1,70 @@
+.cursor-de-manita {
+    cursor: pointer;
+
+}
+span.label.blanco{
+	color: #000000;
+}
+div.resistencia{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	float: left;
+	position: relative;
+	vertical-align: text-bottom;
+  	justify-content: center;
+	background-color: #FFFDD0;
+	border: 2px solid #212121;
+	padding: 2px;
+}
+div.banda{
+	border-radius: 5%;
+    min-height:100%;
+	display: inline-block;
+	height: 100%;
+	width: 20%;
+  	align-self: center;
+	margin-right: 3px;
+}
+div.invisible{
+	border: none;
+}
+.negro{
+	background-color: #000000;
+}
+.café{
+	background-color: #795548;
+}
+
+.rojo{
+	background-color: #F44336;
+}
+.naranja{
+	background-color: #FF9800;
+}
+
+.amarillo{
+	background-color: #FFEB3B;
+}
+.verde{
+	background-color: #4CAF50;
+}
+
+.azul{
+	background-color: #2196F3;
+}
+.violeta{
+	background-color: #9C27B0;
+}
+.gris{
+	background-color: #9E9E9E;
+}
+.blanco{
+	background-color: #FFFFFF;
+}
+.dorado{
+	background-color: #FFD700;
+}
+.plateado{
+	background-color: #C0C0C0;
+}
