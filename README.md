@@ -6,6 +6,7 @@ Esta app calcula qué resistencia tiene (en ohms) una resistencia física
 * Múltiplos y submúltiplos
 * Valor máximo y valor mínimo
 * Tolerancia
+
 # Demostración
 Puedes ver una demostración aquí:
 [Demostración en codepen.io](http://codepen.io/parzibyte/full/jVVvYg/)
@@ -27,5 +28,5 @@ Hacer el proceso inverso: escribir el valor de la resistencia y calcular los col
 
 # Descargar
 Puedes descargar el código fuente :)
-[Código fuente para examinar (entendible para los humanos)](https://github.com/parzibyte/valor-de-resistencias/archive/0.1.zip)
-[Código minificado, solamente para ser ejecutado](https://github.com/parzibyte/valor-de-resistencias/releases/download/0.1/valor-de-resistencia-produccion.rar)
+* [Código fuente para examinar (entendible para los humanos)](https://github.com/parzibyte/valor-de-resistencias/archive/0.1.zip)
+* [Código minificado, solamente para ser ejecutado](https://github.com/parzibyte/valor-de-resistencias/releases/download/0.1/valor-de-resistencia-produccion.rar)
